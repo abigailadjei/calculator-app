@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nerdamer/1.1.10/nerdamer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nerdamer/1.1.10/nerdamer.core.js"></script>
+
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <input type="text" id="screen" class="screen" disabled>
+    </div>
+    <div class="buttons">
+      <!-- Basic Operations -->
+      <button onclick="clearScreen()">C</button>
+      <button onclick="backspace()">←</button>
+      <button onclick="pressKey('%')">%</button>
+      <button onclick="pressKey('/')">÷</button>
+
+      <button onclick="pressKey('7')">7</button>
+      <button onclick="pressKey('8')">8</button>
+      <button onclick="pressKey('9')">9</button>
+      <button onclick="pressKey('*')">×</button>
+
+      <button onclick="pressKey('4')">4</button>
+      <button onclick="pressKey('5')">5</button>
+      <button onclick="pressKey('6')">6</button>
+      <button onclick="pressKey('-')">−</button>
+
+      <button onclick="pressKey('1')">1</button>
+      <button onclick="pressKey('2')">2</button>
+      <button onclick="pressKey('3')">3</button>
+      <button onclick="pressKey('+')">+</button>
+
+      <button onclick="pressKey('0')" class="zero">0</button>
+      <button onclick="pressKey('.')">.</button>
+      <button onclick="calculate()">=</button>
+
+      <!-- Advanced Operations -->
+      <button onclick="pressKey('Math.sin(')">sin</button>
+      <button onclick="pressKey('Math.cos(')">cos</button>
+      <button onclick="pressKey('Math.tan(')">tan</button>
+      <button onclick="pressKey('Math.sqrt(')">√</button>
+
+      <button onclick="pressKey('Math.log(')">log</button>
+      <button onclick="pressKey('Math.pow(')">x<sup>y</sup></button>
+      <button onclick="pressKey('Math.PI')">π</button>
+      <button onclick="pressKey('Math.E')">e</button>
+
+      <button onclick="pressKey('(')">(</button>
+      <button onclick="pressKey(')')">)</button>
+      <button onclick="pressKey('x')">x</button>
+      <button onclick="solveAlgebra()">Solve</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>.
